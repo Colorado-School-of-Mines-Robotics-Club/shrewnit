@@ -14,8 +14,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "paste"
-version = "1.0.15"
+name = "pastey"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
@@ -23,10 +23,10 @@ name = "shrewnit"
 version = "0.2.1"
 dependencies = [
  "num-traits 0.2.19 (registry+https://github.com/rust-lang/crates.io-index)",
- "paste 1.0.15 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pastey 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [metadata]
 "checksum autocfg 1.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
 "checksum num-traits 0.2.19 (registry+https://github.com/rust-lang/crates.io-index)" = "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
-"checksum paste 1.0.15 (registry+https://github.com/rust-lang/crates.io-index)" = "57c0d7b74b563b49d38dae00a0c37d4d6de9b432382b2892f0574ddcae73fd0a"
+"checksum pastey 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "c5a797f0e07bdf071d15742978fc3128ec6c22891c31a3a931513263904c982a"

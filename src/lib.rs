@@ -236,7 +236,7 @@ pub mod prelude {
 
 #[doc(hidden)]
 #[cfg(feature = "const_operators")]
-pub use paste::paste as __paste;
+pub use pastey::paste as __paste;
 
 /// A set of requirements for a scalar type to be used in measures.
 ///
