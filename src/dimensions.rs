@@ -75,9 +75,9 @@ dimension!(
         SquareKilometers: per 1_000_000.0 canonical,
 
         /// Represents the square inch unit of area.
-        SquareInches: 1550.0031000062 per canonical,
+        SquareInches: per 0.00064516 canonical,
         /// Represents the square foot unit of area.
-        SquareFeet: 10.7639104167097 per canonical,
+        SquareFeet: per 0.09290304 canonical,
         /// Represents the square yard unit of area.
         SquareYards: per 0.83612736 canonical,
         /// Represents the acre unit of area.
@@ -107,20 +107,20 @@ dimension!(
         CubicKilometers: per 1_000_000_000.0 canonical,
 
         /// Represents the cubic inch unit of volume.
-        CubicInches: 61023.7440947323 per canonical,
+        CubicInches: per 0.000016387064 canonical,
         /// Represents the cubic foot unit of volume.
-        CubicFeet: 35.3146667214886 per canonical,
+        CubicFeet: per 0.028316846592 canonical,
         /// Represents the cubic yard unit of volume.
-        CubicYards: 1.30795061931439 per canonical,
+        CubicYards: per 0.764554857984 canonical,
 
         /// Represents the fluid ounce unit of volume.
-        FluidOunces: 33814.022701843 per canonical,
+        FluidOunces: per 0.0000295735295625 canonical,
         /// Represents the pint unit of volume.
-        Pints: 2113.37641886519 per canonical,
+        Pints: per 0.000473176473 canonical,
         /// Represents the quart unit of volume.
-        Quarts: 1056.68820943259 per canonical,
+        Quarts: per 0.000946352946 canonical,
         /// Represents the gallon unit of volume.
-        Gallons: 264.172052358148 per canonical,
+        Gallons: per 0.003785411784 canonical,
 
     } where {
         Self / Length => Area in SquareMeters,
@@ -175,8 +175,10 @@ dimension!(
         KilometersPerSecond: per 1000.0 canonical,
         /// Represents the kilometer per hour unit of linear velocity.
         KilometersPerHour: 3.6 per canonical,
+        /// Represents the inch per second unit of linear velocity.
+        InchesPerSecond: per 0.0254 canonical,
         /// Represents the foot per second unit of linear velocity.
-        FeetPerSecond: 3.281 per canonical,
+        FeetPerSecond: per 0.3048 canonical,
         /// Represents the mile per hour unit of linear velocity.
         MilesPerHour: per 0.44704 canonical,
     } where {
@@ -190,6 +192,8 @@ dimension! {
 
         /// Represents the meter per second squared unit of linear acceleration.
         MetersPerSecondSquared: 1.0 per canonical,
+        /// Represents the inch per second squared unit of linear acceleration.
+        InchesPerSecondSquared: per 0.0254 canonical,
         /// Represents the foot per second squared unit of linear acceleration.
         FeetPerSecondSquared: per 0.3048 canonical,
     } where {
@@ -267,7 +271,7 @@ dimension!(
         /// Represents the ton unit of mass.
         Pounds: per 0.45359237 canonical,
         /// Represents the ounces unit of mass.
-        Ounces: 35.2739619495804 per canonical,
+        Ounces: per 0.028349523125 canonical,
         /// Represents the stone unit of mass.
         Stones: per 6.35029318 canonical,
 
@@ -293,7 +297,7 @@ dimension!(
         /// This is the standard SI unit of force.
         Newtons: 1.0 per canonical,
         /// Represents the pound-force unit of force.
-        PoundsForce: 4.4482216 per canonical,
+        PoundsForce: per 4.44822161526 canonical,
         /// Represents the dyne unit of force.
         Dynes: per 1e-05 canonical,
     } where {
@@ -342,7 +346,7 @@ dimension!(
         NewtonMetersPerDegree: per 57.2957795130823 canonical,
 
         /// Represents the pound-foot per radian unit of torque.
-        PoundFeetPerRadian: per 1.3558179483314 canonical,
+        PoundFeetPerRadian: per 1.3558179483314004 canonical,
         /// Represents the pound-foot per degree unit of torque.
         PoundFeetPerDegree: per 77.6826462274756 canonical,
 
@@ -367,7 +371,7 @@ dimension!(
         /// Represents the kilocalorie unit of energy.
         Kilocalories: per 4184.0 canonical,
         /// Represents the erg unit of energy.
-        Ergs: 10e-7 per canonical,
+        Ergs: 10_000_000.0 per canonical,
         /// Represents the watt-hour unit of energy.
         WattHours: per 3600.0 canonical,
     } where {
@@ -388,13 +392,13 @@ dimension!(
         /// This is the standard SI unit of power.
         Watts: 1.0 per canonical,
         /// Represents the horsepower unit of power.
-        Horsepower: per 745.69987158227 canonical,
+        Horsepower: per 745.699987158227022 canonical,
 
         /// Represents the ergs per second unit of power.
-        ErgsPerSecond: 10e-7 per canonical,
+        ErgsPerSecond: 10_000_000.0 per canonical,
 
         /// Represents the foot-pounds per minute unit of power.
-        FootPoundsPerMinute: 44.2537289566359 per canonical,
+        FootPoundsPerMinute: per 0.02259696580552334 canonical,
     } where {
         Self / Voltage => Current in Amperes,
         Self / Current => Voltage in Volts,
